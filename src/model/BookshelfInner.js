@@ -58,6 +58,8 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('bookName'))
         obj.bookName = ApiClient.convertToType(data['bookName'], 'String');
+      if (data.hasOwnProperty('bookId'))
+        obj.bookId = ApiClient.convertToType(data['bookId'], 'Number');
     }
     return obj;
   }
@@ -66,6 +68,11 @@
    * @member {String} bookName
    */
   exports.prototype.bookName = undefined;
+
+  /**
+   * @member {Number} bookId
+   */
+  exports.prototype.bookId = undefined;
 
   return exports;
 

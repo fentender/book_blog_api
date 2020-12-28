@@ -46,6 +46,12 @@
         // expect(instance.bookName).to.be(expectedValueLiteral);
       });
 
+      it('should have the property bookId (base name: "bookId")', function() {
+        // TODO: update the code to test the property bookId
+        expect(instance).to.have.property('bookId');
+        // expect(instance.bookId).to.be(expectedValueLiteral);
+      });
+
     });
   });
 
