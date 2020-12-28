@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **bookName** | **String** |  | 
-**bookId** | **Number** |  | [optional] 
+**bookId** | **Number** |  | 
 
 
