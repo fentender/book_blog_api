@@ -1,9 +1,8 @@
-# BookBlogApi.Books
+# BookBlogApi.BookshelfsBookshelfs
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**num** | **Number** |  | 
-**books** | [**[Book]**](Book.md) |  | 
+**bookshelfName** | **String** |  | [optional] 
 
 

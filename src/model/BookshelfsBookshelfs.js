@@ -25,56 +25,45 @@
     if (!root.BookBlogApi) {
       root.BookBlogApi = {};
     }
-    root.BookBlogApi.User = factory(root.BookBlogApi.ApiClient);
+    root.BookBlogApi.BookshelfsBookshelfs = factory(root.BookBlogApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The User model module.
-   * @module model/User
+   * The BookshelfsBookshelfs model module.
+   * @module model/BookshelfsBookshelfs
    * @version 0.0.4
    */
 
   /**
-   * Constructs a new <code>User</code>.
-   * @alias module:model/User
+   * Constructs a new <code>BookshelfsBookshelfs</code>.
+   * @alias module:model/BookshelfsBookshelfs
    * @class
-   * @param username {String} 
-   * @param password {String} 
    */
-  var exports = function(username, password) {
-    this.username = username;
-    this.password = password;
+  var exports = function() {
   };
 
   /**
-   * Constructs a <code>User</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>BookshelfsBookshelfs</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/User} obj Optional instance to populate.
-   * @return {module:model/User} The populated <code>User</code> instance.
+   * @param {module:model/BookshelfsBookshelfs} obj Optional instance to populate.
+   * @return {module:model/BookshelfsBookshelfs} The populated <code>BookshelfsBookshelfs</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('Username'))
-        obj.username = ApiClient.convertToType(data['Username'], 'String');
-      if (data.hasOwnProperty('Password'))
-        obj.password = ApiClient.convertToType(data['Password'], 'String');
+      if (data.hasOwnProperty('bookshelfName'))
+        obj.bookshelfName = ApiClient.convertToType(data['bookshelfName'], 'String');
     }
     return obj;
   }
 
   /**
-   * @member {String} username
+   * @member {String} bookshelfName
    */
-  exports.prototype.username = undefined;
-
-  /**
-   * @member {String} password
-   */
-  exports.prototype.password = undefined;
+  exports.prototype.bookshelfName = undefined;
 
   return exports;
 

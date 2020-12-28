@@ -25,53 +25,42 @@
     if (!root.BookBlogApi) {
       root.BookBlogApi = {};
     }
-    root.BookBlogApi.Book = factory(root.BookBlogApi.ApiClient);
+    root.BookBlogApi.BookshelfBookshelf = factory(root.BookBlogApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The Book model module.
-   * @module model/Book
+   * The BookshelfBookshelf model module.
+   * @module model/BookshelfBookshelf
    * @version 0.0.4
    */
 
   /**
-   * Constructs a new <code>Book</code>.
-   * @alias module:model/Book
+   * Constructs a new <code>BookshelfBookshelf</code>.
+   * @alias module:model/BookshelfBookshelf
    * @class
-   * @param bookId {Number} 
    */
-  var exports = function(bookId) {
-    this.bookId = bookId;
+  var exports = function() {
   };
 
   /**
-   * Constructs a <code>Book</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>BookshelfBookshelf</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/Book} obj Optional instance to populate.
-   * @return {module:model/Book} The populated <code>Book</code> instance.
+   * @param {module:model/BookshelfBookshelf} obj Optional instance to populate.
+   * @return {module:model/BookshelfBookshelf} The populated <code>BookshelfBookshelf</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('bookId'))
-        obj.bookId = ApiClient.convertToType(data['bookId'], 'Number');
       if (data.hasOwnProperty('bookName'))
         obj.bookName = ApiClient.convertToType(data['bookName'], 'String');
-      if (data.hasOwnProperty('autor'))
-        obj.autor = ApiClient.convertToType(data['autor'], 'String');
-      if (data.hasOwnProperty('info'))
-        obj.info = ApiClient.convertToType(data['info'], 'String');
+      if (data.hasOwnProperty('bookId'))
+        obj.bookId = ApiClient.convertToType(data['bookId'], 'Number');
     }
     return obj;
   }
-
-  /**
-   * @member {Number} bookId
-   */
-  exports.prototype.bookId = undefined;
 
   /**
    * @member {String} bookName
@@ -79,14 +68,9 @@
   exports.prototype.bookName = undefined;
 
   /**
-   * @member {String} autor
+   * @member {Number} bookId
    */
-  exports.prototype.autor = undefined;
-
-  /**
-   * @member {String} info
-   */
-  exports.prototype.info = undefined;
+  exports.prototype.bookId = undefined;
 
   return exports;
 

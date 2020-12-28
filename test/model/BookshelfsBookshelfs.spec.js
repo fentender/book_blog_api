@@ -30,26 +30,20 @@
   var instance;
 
   describe('(package)', function() {
-    describe('Bookshelf', function() {
+    describe('BookshelfsBookshelfs', function() {
       beforeEach(function() {
-        instance = new BookBlogApi.Bookshelf();
+        instance = new BookBlogApi.BookshelfsBookshelfs();
       });
 
-      it('should create an instance of Bookshelf', function() {
-        // TODO: update the code to test Bookshelf
-        expect(instance).to.be.a(BookBlogApi.Bookshelf);
+      it('should create an instance of BookshelfsBookshelfs', function() {
+        // TODO: update the code to test BookshelfsBookshelfs
+        expect(instance).to.be.a(BookBlogApi.BookshelfsBookshelfs);
       });
 
-      it('should have the property num (base name: "num")', function() {
-        // TODO: update the code to test the property num
-        expect(instance).to.have.property('num');
-        // expect(instance.num).to.be(expectedValueLiteral);
-      });
-
-      it('should have the property bookshelf (base name: "bookshelf")', function() {
-        // TODO: update the code to test the property bookshelf
-        expect(instance).to.have.property('bookshelf');
-        // expect(instance.bookshelf).to.be(expectedValueLiteral);
+      it('should have the property bookshelfName (base name: "bookshelfName")', function() {
+        // TODO: update the code to test the property bookshelfName
+        expect(instance).to.have.property('bookshelfName');
+        // expect(instance.bookshelfName).to.be(expectedValueLiteral);
       });
 
     });
