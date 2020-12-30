@@ -25,45 +25,47 @@
     if (!root.BookBlogApi) {
       root.BookBlogApi = {};
     }
-    root.BookBlogApi.BookshelfsBookshelfs = factory(root.BookBlogApi.ApiClient);
+    root.BookBlogApi.Token = factory(root.BookBlogApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The BookshelfsBookshelfs model module.
-   * @module model/BookshelfsBookshelfs
+   * The Token model module.
+   * @module model/Token
    * @version 0.0.5
    */
 
   /**
-   * Constructs a new <code>BookshelfsBookshelfs</code>.
-   * @alias module:model/BookshelfsBookshelfs
+   * Constructs a new <code>Token</code>.
+   * @alias module:model/Token
    * @class
+   * @param token {String} 
    */
-  var exports = function() {
+  var exports = function(token) {
+    this.token = token;
   };
 
   /**
-   * Constructs a <code>BookshelfsBookshelfs</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>Token</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/BookshelfsBookshelfs} obj Optional instance to populate.
-   * @return {module:model/BookshelfsBookshelfs} The populated <code>BookshelfsBookshelfs</code> instance.
+   * @param {module:model/Token} obj Optional instance to populate.
+   * @return {module:model/Token} The populated <code>Token</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('bookshelfName'))
-        obj.bookshelfName = ApiClient.convertToType(data['bookshelfName'], 'String');
+      if (data.hasOwnProperty('Token'))
+        obj.token = ApiClient.convertToType(data['Token'], 'String');
     }
     return obj;
   }
 
   /**
-   * @member {String} bookshelfName
+   * @member {String} token
    */
-  exports.prototype.bookshelfName = undefined;
+  exports.prototype.token = undefined;
 
 
   return exports;
