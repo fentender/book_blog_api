@@ -5,8 +5,8 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**signIn**](TokenApi.md#signIn) | **GET** /token | Sign in account
+[**signOut**](TokenApi.md#signOut) | **DELETE** /token | Sign out
 [**signUp**](TokenApi.md#signUp) | **POST** /token | Create a account
-[**singOut**](TokenApi.md#singOut) | **DELETE** /token | Sign out
 
 
 <a name="signIn"></a>
@@ -55,6 +55,46 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
+<a name="signOut"></a>
+# **signOut**
+> signOut()
+
+Sign out
+
+Sign out account
+
+### Example
+```javascript
+var BookBlogApi = require('book_blog_api');
+
+var apiInstance = new BookBlogApi.TokenApi();
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+};
+apiInstance.signOut(callback);
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
 <a name="signUp"></a>
 # **signUp**
 > Token signUp(userInfo)
@@ -91,46 +131,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Token**](Token.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: Not defined
-
-<a name="singOut"></a>
-# **singOut**
-> singOut()
-
-Sign out
-
-Sign out account
-
-### Example
-```javascript
-var BookBlogApi = require('book_blog_api');
-
-var apiInstance = new BookBlogApi.TokenApi();
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully.');
-  }
-};
-apiInstance.singOut(callback);
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-null (empty response body)
 
 ### Authorization
 

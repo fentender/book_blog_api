@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getUser"></a>
 # **getUser**
-> User getUser(username, userInfo)
+> User getUser(username, )
 
 Get a user
 
@@ -23,8 +23,6 @@ var apiInstance = new BookBlogApi.UserApi();
 
 var username = "username_example"; // String | User's ID
 
-var userInfo = new BookBlogApi.User(); // User | User's info
-
 
 var callback = function(error, data, response) {
   if (error) {
@@ -33,7 +31,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getUser(username, userInfo, callback);
+apiInstance.getUser(username, , callback);
 ```
 
 ### Parameters
@@ -41,7 +39,6 @@ apiInstance.getUser(username, userInfo, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **username** | **String**| User's ID | 
- **userInfo** | [**User**](User.md)| User's info | 
 
 ### Return type
 

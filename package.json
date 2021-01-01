@@ -1,6 +1,6 @@
 {
   "name": "book_blog_api",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "This_is_a_blog_about_books_",
   "license": "Unlicense",
   "main": "src/index.js",
