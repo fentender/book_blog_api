@@ -80,7 +80,7 @@ var apiInstance = new BookBlogApi.UserBookshelfApi();
 
 var username = "username_example"; // String | User's ID
 
-var bookshelf = new BookBlogApi.Bookshelf(); // Bookshelf | Info of bookshelf
+var bookshelf = new BookBlogApi.BookshelfInfo(); // BookshelfInfo | Info of bookshelf
 
 
 var callback = function(error, data, response) {
@@ -98,7 +98,7 @@ apiInstance.createBookshelf(username, bookshelf, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **username** | **String**| User's ID | 
- **bookshelf** | [**Bookshelf**](Bookshelf.md)| Info of bookshelf | 
+ **bookshelf** | [**BookshelfInfo**](BookshelfInfo.md)| Info of bookshelf | 
 
 ### Return type
 
