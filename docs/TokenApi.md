@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="signIn"></a>
 # **signIn**
-> Token signIn(userInfo)
+> Token signIn(username, password)
 
 Sign in account
 
@@ -23,7 +23,9 @@ var BookBlogApi = require('book_blog_api');
 
 var apiInstance = new BookBlogApi.TokenApi();
 
-var userInfo = new BookBlogApi.User(); // User | User's info
+var username = "username_example"; // String | User's username
+
+var password = "password_example"; // String | User's password
 
 
 var callback = function(error, data, response) {
@@ -33,14 +35,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.signIn(userInfo, callback);
+apiInstance.signIn(username, password, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userInfo** | [**User**](User.md)| User's info | 
+ **username** | **String**| User's username | 
+ **password** | **String**| User's password | 
 
 ### Return type
 
